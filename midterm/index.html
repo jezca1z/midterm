@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="กรุงเทพฯ มีด้านหน้าที่สวยงาม และด้านหลังที่วุ่นวายอยู่บนถนนเส้นเดียวกัน">
+    <title>BANGKOK : FRONT / BACK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Prompt:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">BANGKOK : FRONT / BACK</a>
+        <nav class="site-nav" aria-label="เมนูหลัก">
+            <a class="is-current" href="index.html" aria-current="page">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="archive.html">ARCHIVE</a>
+            <a href="progress.html">THE PRICE OF PROGRESS</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>กรุงเทพฯ มีด้านที่เราเห็น<br>และด้านที่เรา<span>ไม่ค่อยเห็น</span></h1>
+        <p class="intro">ถนนเส้นเดียวกันอาจมีสองโลกที่อยู่ติดกัน ลากเส้นแบ่งเพื่อเปิดด้านหลังของเมือง</p>
+
+        <div class="compare" id="compare" style="--split: 52%;">
+            <figure class="layer back">
+                <img src="assets/back_hero.jpg" alt="ด้านหลังของกรุงเทพฯ: ซอยแคบ สายไฟ ร้านริมทาง">
+                <figcaption><b>BACK</b><span>ซอยแคบ · สายไฟ · ร้านริมทาง</span></figcaption>
+            </figure>
+            <figure class="layer front">
+                <img src="assets/front_hero.jpg" alt="ด้านหน้าของกรุงเทพฯ: คาเฟ่ ห้าง Billboard BTS อาคารสูง">
+                <figcaption><b>FRONT</b><span>คาเฟ่ · ห้าง · BTS · อาคารสูง</span></figcaption>
+            </figure>
+            <button class="handle" type="button" aria-label="ลากเพื่อเปิดด้านหลังของกรุงเทพฯ">
+                <span class="handle-label">DRAG</span>
+                <i></i>
+            </button>
+        </div>
+
+        <div class="controls">
+            <button type="button" data-split="88">FRONT</button>
+            <button type="button" data-split="50" class="is-on">SPLIT</button>
+            <button type="button" data-split="12">BACK</button>
+        </div>
+
+        <nav class="home-links" aria-label="ไปยังเนื้อหาส่วนอื่น">
+            <a href="about.html"><span>ABOUT</span><strong>ความคิดเห็นของฉัน</strong><b>↗</b></a>
+            <a href="archive.html"><span>FIELD STUDY</span><strong>Contrast archive</strong><b>↗</b></a>
+            <a href="progress.html"><span>FIELD REPORT</span><strong>The Price of Progress</strong><b>↗</b></a>
+        </nav>
+    </main>
+
+    <footer>
+        <span>67128532 ปนัดดา บุกสันเทียะ</span>
+        <a href="index.html">BANGKOK VISUAL NOISE</a>
+    </footer>
+
+    <script src="page.js"></script>
+</body>
+</html>
